@@ -1,44 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Surge Electric LLC</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency Electrician Reno | Surge Electric</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.top-bar {
+  background: #ff1a1a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('truck.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background: linear-gradient(to bottom, #ff2a2a, #cc0000);
+  padding: 16px 28px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(255,0,0,0.6);
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.emergency-box {
+  background: #111;
+  border: 2px solid #ff2a2a;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.trust {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.sticky-call {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ff1a1a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 { font-size: 30px; }
+}
+</style>
 </head>
+
 <body>
 
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="content">
-    <h1>Reliable Reno Electrician</h1>
-    <p>Fast Response • Honest Pricing • Expert Troubleshooting</p>
-    <a href="tel:17752876348" class="btn">Call Now: (775) 287-6348</a>
+<div class="top-bar">
+⚡ 24/7 Emergency Electrician • Reno NV • Call Now (775) 287-6348
+</div>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>Emergency Electrician in Reno – Available Now</h1>
+    <p>Power Out? Burning Smell? Breakers Tripping? We Respond FAST.</p>
+    <a href="tel:17752876348" class="cta-button">⚡ Call Now – Immediate Service</a>
   </div>
-</section>
+</div>
 
-<section class="trust">
+<div class="section">
+  <div class="emergency-box">
+    <h2>⚠️ Electrical Emergency?</h2>
+    <ul>
+      <li>Power Outages</li>
+      <li>Burning Smell</li>
+      <li>Hot Electrical Panel</li>
+      <li>Breaker Keeps Tripping</li>
+    </ul>
+    <p>Don’t wait — this can be dangerous.</p>
+  </div>
+</div>
+
+<div class="section">
   <h2>Why Choose Surge Electric</h2>
-  <ul>
-    <li>✔ Local Reno Electrician</li>
-    <li>✔ Fast Response Time</li>
-    <li>✔ Accurate Troubleshooting</li>
-    <li>✔ Honest, Upfront Pricing</li>
-  </ul>
-</section>
+  <p class="trust">
+    ✔ Licensed & Insured<br>
+    ✔ Local Reno Electrician<br>
+    ✔ Same-Day Service<br>
+    ✔ Honest, Upfront Pricing
+  </p>
+</div>
 
-<section class="reviews">
+<div class="section">
   <h2>5-Star Customer Reviews</h2>
-  <p>"Showed up fast and got our power back same day. Super professional."</p>
+  <p>"Showed up fast and got our power back same day."</p>
   <p>"Diagnosed the issue quickly and explained everything clearly."</p>
   <p>"Very responsive and reliable. Will definitely call again."</p>
-</section>
+</div>
 
-<section class="cta">
+<div class="section">
   <h2>Electrical Problems Are Dangerous</h2>
-  <p>Smell burning? Hot panel? Call now.</p>
-  <a href="tel:17752876348" class="btn">Call Now</a>
-</section>
+  <p>Smell burning? Panel hot? Don’t wait.</p>
+  <a href="tel:17752876348" class="cta-button">Call Now</a>
+</div>
+
+<a href="tel:17752876348" class="sticky-call">📞 Call Now (775) 287-6348</a>
 
 </body>
 </html>

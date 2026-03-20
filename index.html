@@ -8,7 +8,7 @@
 <style>
 * {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
 
-body {background:#070707;color:white;}
+body {background:#050505;color:white;}
 
 /* TOP BAR */
 .top-bar {
@@ -17,6 +17,7 @@ body {background:#070707;color:white;}
   padding:10px;
   font-weight:bold;
   font-size:14px;
+  box-shadow:0 0 15px rgba(255,0,0,0.6);
 }
 
 /* HERO */
@@ -25,7 +26,7 @@ body {background:#070707;color:white;}
   flex-wrap:wrap;
   align-items:center;
   justify-content:center;
-  padding:60px 20px;
+  padding:70px 20px;
   background:radial-gradient(circle at center, #111 0%, #000 100%);
 }
 
@@ -33,7 +34,7 @@ body {background:#070707;color:white;}
   width:100%;
   max-width:520px;
   border-radius:12px;
-  box-shadow:0 0 40px rgba(255,0,0,0.2);
+  box-shadow:0 0 60px rgba(255,0,0,0.35);
 }
 
 .hero-text {
@@ -55,9 +56,17 @@ h1 {
   font-weight:bold;
 }
 
+/* EXTRA URGENCY LINE */
+.urgent {
+  color:#ff3b3b;
+  font-weight:bold;
+  font-size:18px;
+  margin-top:10px;
+}
+
 /* CTA */
 .cta {
-  background:linear-gradient(#ff3b3b,#b80000);
+  background:linear-gradient(#ff3b3b,#990000);
   padding:18px 30px;
   display:inline-block;
   margin-top:25px;
@@ -66,7 +75,12 @@ h1 {
   text-decoration:none;
   color:white;
   font-size:20px;
-  box-shadow:0 0 25px rgba(255,0,0,0.7);
+  box-shadow:0 0 35px rgba(255,0,0,0.8);
+  transition:0.2s;
+}
+
+.cta:hover {
+  transform:scale(1.05);
 }
 
 /* CHECK LINE */
@@ -85,7 +99,8 @@ h1 {
 .divider {
   height:2px;
   background:linear-gradient(to right, transparent, red, transparent);
-  margin:40px 0;
+  margin:50px 0;
+  box-shadow:0 0 10px red;
 }
 
 /* SERVICES */
@@ -98,16 +113,23 @@ h1 {
 }
 
 .feature {
-  width:160px;
-  padding:15px;
-  background:#111;
+  width:170px;
+  padding:18px;
+  background:#121212;
   border-radius:10px;
-  box-shadow:0 0 10px rgba(255,0,0,0.1);
+  border:1px solid rgba(255,0,0,0.25);
+  box-shadow:0 0 15px rgba(255,0,0,0.15);
+  transition:0.2s;
+}
+
+.feature:hover {
+  transform:translateY(-5px);
+  box-shadow:0 0 25px rgba(255,0,0,0.4);
 }
 
 /* TRUCK SECTION */
 .truck-section {
-  background:#0b0b0b;
+  background:#080808;
 }
 
 .truck-section img {
@@ -115,7 +137,7 @@ h1 {
   max-width:750px;
   margin-top:30px;
   border-radius:12px;
-  box-shadow:0 0 40px rgba(255,0,0,0.2);
+  box-shadow:0 0 80px rgba(255,0,0,0.35);
 }
 
 /* WARNING TEXT */
@@ -123,6 +145,7 @@ h1 {
   color:#ff3b3b;
   margin-top:15px;
   font-weight:bold;
+  font-size:18px;
 }
 
 /* STICKY BAR */
@@ -135,8 +158,8 @@ h1 {
   padding:15px;
   font-size:18px;
   font-weight:bold;
+  box-shadow:0 -5px 20px rgba(255,0,0,0.6);
 }
-
 </style>
 </head>
 
@@ -157,7 +180,9 @@ h1 {
 <p>Power Out? Burning Smell? Breakers Tripping?</p>
 <p class="fast">We respond FAST.</p>
 
-<a href="tel:17752876348" class="cta">⚡ CALL NOW: (775) 287-6348</a>
+<p class="urgent">🚚 Same-Day Service • Fast Arrival</p>
+
+<a href="tel:17752876348" class="cta">⚡ CALL NOW – IMMEDIATE SERVICE</a>
 
 <p class="checks">
 ✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
@@ -196,14 +221,16 @@ h1 {
 
 <img src="truck.png" alt="Service Truck" />
 
-<a href="tel:17752876348" class="cta">⚡ CALL NOW: (775) 287-6348</a>
+<a href="tel:17752876348" class="cta">⚡ CALL NOW – IMMEDIATE SERVICE</a>
 
-<p style="margin-top:15px;">
+<h2 style="margin-top:40px;">Electrical Problems Are Dangerous</h2>
+
+<p style="margin-top:10px;">
 Serving Reno • Sparks • Spanish Springs • Sun Valley
 </p>
 
 <p class="warning">
-Electrical Problems Are Dangerous. Call Immediately.
+Burning smell? Hot panel? Don’t wait.
 </p>
 
 </div>

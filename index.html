@@ -1,108 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Emergency Electrician Reno | Surge Electric</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
-}
+* {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+
+body {background:#0b0b0b;color:white;}
 
 .top-bar {
-  background: #ff1a1a;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('truck.png') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.hero-content {
-  max-width: 700px;
-}
-
-h1 {
-  font-size: 42px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  background: linear-gradient(to bottom, #ff2a2a, #cc0000);
-  padding: 16px 28px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 6px;
-  box-shadow: 0 4px 15px rgba(255,0,0,0.6);
+  background:#ff1a1a;
+  text-align:center;
+  padding:10px;
+  font-weight:bold;
 }
 
 .section {
-  padding: 60px 20px;
-  text-align: center;
+  padding:60px 20px;
+  text-align:center;
 }
 
-.emergency-box {
-  background: #111;
-  border: 2px solid #ff2a2a;
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 500px;
-  margin: auto;
+.hero {
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.9));
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.hero img {
+  width:100%;
+  max-width:500px;
 }
 
-ul li {
-  margin: 10px 0;
+.hero-text {
+  max-width:500px;
+  padding:20px;
 }
 
-.trust {
-  margin-top: 20px;
-  line-height: 1.6;
+h1 {
+  font-size:36px;
+  margin-bottom:15px;
+}
+
+p {
+  margin-bottom:10px;
+}
+
+.cta {
+  background:linear-gradient(#ff3b3b,#c40000);
+  padding:15px 25px;
+  display:inline-block;
+  margin-top:20px;
+  font-weight:bold;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+}
+
+.features {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.feature {
+  width:150px;
+}
+
+.truck-section {
+  background:#111;
+}
+
+.truck-section img {
+  width:100%;
+  max-width:700px;
+  margin-top:20px;
 }
 
 .sticky-call {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #ff1a1a;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: bold;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#ff1a1a;
+  text-align:center;
+  padding:15px;
+  font-size:18px;
 }
 
-@media (max-width: 600px) {
-  h1 { font-size: 30px; }
-}
 </style>
 </head>
 
@@ -112,51 +100,63 @@ ul li {
 ⚡ 24/7 Emergency Electrician • Reno NV • Call Now (775) 287-6348
 </div>
 
-<div class="hero">
-  <div class="hero-content">
-    <h1>Emergency Electrician in Reno – Available Now</h1>
-    <p>Power Out? Burning Smell? Breakers Tripping? We Respond FAST.</p>
-    <a href="tel:17752876348" class="cta-button">⚡ Call Now – Immediate Service</a>
-  </div>
+<!-- HERO SECTION -->
+<div class="section hero">
+
+<img src="/panel.jpg" alt="Electrician Working" />
+
+<div class="hero-text">
+<h1>Emergency Electrician in Reno — Available Now</h1>
+<p>Power Out? Burning Smell? Breakers Tripping?</p>
+<p>We respond FAST.</p>
+
+<a href="tel:17752876348" class="cta">⚡ Call Now: (775) 287-6348</a>
+
+<p style="margin-top:15px;">
+✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
+</p>
 </div>
 
+</div>
+
+<!-- SERVICES -->
 <div class="section">
-  <div class="emergency-box">
-    <h2>⚠️ Electrical Emergency?</h2>
-    <ul>
-      <li>Power Outages</li>
-      <li>Burning Smell</li>
-      <li>Hot Electrical Panel</li>
-      <li>Breaker Keeps Tripping</li>
-    </ul>
-    <p>Don’t wait — this can be dangerous.</p>
-  </div>
+<h2>We Can Help With:</h2>
+<div class="features">
+<div class="feature">Power Outages</div>
+<div class="feature">Breaker Issues</div>
+<div class="feature">Burning Smell</div>
+<div class="feature">Dead Outlets</div>
+<div class="feature">Flickering Lights</div>
+<div class="feature">Emergency Repairs</div>
+</div>
 </div>
 
-<div class="section">
-  <h2>Why Choose Surge Electric</h2>
-  <p class="trust">
-    ✔ Licensed & Insured<br>
-    ✔ Local Reno Electrician<br>
-    ✔ Same-Day Service<br>
-    ✔ Honest, Upfront Pricing
-  </p>
+<!-- TRUCK SECTION -->
+<div class="section truck-section">
+<h2>Why Choose Surge Electric</h2>
+<p>✔ Licensed & Insured</p>
+<p>✔ NV Licensed Electrician</p>
+<p>✔ Same-Day Service</p>
+<p>✔ Local Reno Electrician</p>
+
+<img src="/truck.jpg" alt="Service Truck" />
+
+<a href="tel:17752876348" class="cta">⚡ Call Now: (775) 287-6348</a>
+
+<p style="margin-top:15px;">
+Serving Reno • Sparks • Spanish Springs • Sun Valley
+</p>
+
+<p style="margin-top:15px; color:#ff4d4d;">
+Electrical Problems Are Dangerous. Call Immediately.
+</p>
+
 </div>
 
-<div class="section">
-  <h2>5-Star Customer Reviews</h2>
-  <p>"Showed up fast and got our power back same day."</p>
-  <p>"Diagnosed the issue quickly and explained everything clearly."</p>
-  <p>"Very responsive and reliable. Will definitely call again."</p>
+<div class="sticky-call">
+📞 Call Now (775) 287-6348
 </div>
-
-<div class="section">
-  <h2>Electrical Problems Are Dangerous</h2>
-  <p>Smell burning? Panel hot? Don’t wait.</p>
-  <a href="tel:17752876348" class="cta-button">Call Now</a>
-</div>
-
-<a href="tel:17752876348" class="sticky-call">📞 Call Now (775) 287-6348</a>
 
 </body>
 </html>

@@ -3,36 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Emergency & Same-Day Electrician Reno | Surge Electric</title>
+<title>Emergency Electrician Reno | Surge Electric</title>
 
 <style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#000;
-  color:white;
-}
+* {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+body {background:#000;color:#fff;}
 
 /* HERO */
 .hero {
-  background: url('panel.png') center/cover no-repeat;
-  padding:90px 20px;
-  text-align:center;
   position:relative;
+  height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:url('panel.png') center/cover no-repeat;
 }
 
-.hero::before {
-  content:'';
+.overlay {
   position:absolute;
-  top:0; left:0;
-  width:100%; height:100%;
-  background:rgba(0,0,0,0.75);
+  width:100%;
+  height:100%;
+  background:linear-gradient(to right, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.3));
 }
 
 .hero-content {
   position:relative;
   z-index:2;
+  max-width:800px;
+  padding:20px;
 }
 
 h1 {
@@ -40,136 +39,116 @@ h1 {
   margin-bottom:10px;
 }
 
-.hero p {
-  opacity:0.9;
+.sub {
+  font-size:18px;
+  margin-bottom:25px;
+  opacity:.9;
 }
 
-/* BUTTON */
 .cta {
   display:inline-block;
-  background:linear-gradient(#ff3b3b,#cc0000);
-  padding:16px 28px;
-  margin-top:20px;
-  border-radius:8px;
+  background:linear-gradient(#ff3b3b,#c40000);
+  padding:16px 30px;
+  border-radius:10px;
+  font-size:20px;
   font-weight:bold;
   text-decoration:none;
-  color:white;
-  font-size:20px;
+  color:#fff;
+  box-shadow:0 0 20px rgba(255,0,0,0.4);
+  transition:.2s;
 }
 
-.subtext {
-  margin-top:10px;
+.cta:hover {
+  transform:scale(1.05);
+}
+
+.trust {
+  margin-top:15px;
   font-size:14px;
-  opacity:0.85;
+  opacity:.9;
 }
 
-/* BAR */
-.bar {
+/* GOLD BAR */
+.gold-bar {
   background:#d4af37;
+  color:#000;
   text-align:center;
   padding:10px;
   font-weight:bold;
-  color:black;
 }
 
 /* SERVICES */
-.services {
+.section {
   padding:40px 20px;
   text-align:center;
 }
 
-.service-grid {
+.services {
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:10px;
+  gap:15px;
+  margin-top:20px;
 }
 
 .service {
-  border:1px solid red;
-  padding:10px 14px;
-  border-radius:20px;
+  border:1px solid #ff3b3b;
+  padding:10px 18px;
+  border-radius:25px;
 }
 
-/* TRUST */
-.trust {
-  padding:40px 20px;
+/* WHY SECTION */
+.why {
+  position:relative;
+  padding:60px 20px;
   text-align:center;
+  background:url('truck.png') center/cover no-repeat;
 }
 
-.trust-grid {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
+.why-overlay {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  top:0;
+  left:0;
 }
 
-/* TRUCK */
-.truck {
+.why-content {
+  position:relative;
+  z-index:2;
+}
+
+.why ul {
+  list-style:none;
+  margin-top:20px;
+}
+
+.why li {
+  margin:10px 0;
+}
+
+/* CTA STRIP */
+.cta-strip {
+  background:#ff1a1a;
   text-align:center;
-}
-
-.truck img {
-  max-width:100%;
-}
-
-/* URGENCY */
-.urgency {
-  background:#0a0a0a;
-  text-align:center;
-  padding:50px 20px;
-}
-
-.urgency h2 {
-  font-size:28px;
-  margin-bottom:10px;
-}
-
-/* ABOUT */
-.about {
-  padding:40px 20px;
-  text-align:center;
-  max-width:800px;
-  margin:auto;
-}
-
-/* FAQ */
-.faq {
-  padding:40px 20px;
-  max-width:800px;
-  margin:auto;
-}
-
-.faq div {
-  margin:15px 0;
+  padding:15px;
+  font-size:20px;
+  font-weight:bold;
 }
 
 /* FINAL CTA */
 .final {
-  padding:60px 20px;
   text-align:center;
+  padding:50px 20px;
 }
 
 /* FOOTER */
 .footer {
-  background:red;
-  text-align:center;
-  padding:10px;
-}
-
-/* STICKY CALL */
-.sticky-call {
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  background:red;
-  color:white;
+  background:#ff1a1a;
   text-align:center;
   padding:15px;
-  font-weight:bold;
-  z-index:999;
-  text-decoration:none;
+  font-size:14px;
 }
 </style>
 </head>
@@ -178,107 +157,82 @@ h1 {
 
 <!-- HERO -->
 <section class="hero">
+  <div class="overlay"></div>
+
   <div class="hero-content">
     <h1>Emergency & Same-Day Electrician in Reno</h1>
-    <p>Power Out? Burning Smell? Need an Outlet Installed Today?</p>
 
-    <a href="tel:7752876348" class="cta">⚡ Call Now: 775-287-6348</a>
+    <div class="sub">
+      Power Out? Burning Smell? Need Electrical Work Done Today?
+    </div>
 
-    <div class="subtext">
+    <a href="tel:7752876348" class="cta">
+      ⚡ Call Now: 775-287-6348
+    </a>
+
+    <div class="trust">
       ⚡ Emergency Repairs • Same-Day Service • Installations Available
     </div>
   </div>
 </section>
 
-<!-- BAR -->
-<div class="bar">
-✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
+<!-- GOLD BAR -->
+<div class="gold-bar">
+  ✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
 </div>
 
 <!-- SERVICES -->
-<section class="services">
+<section class="section">
   <h2>We Can Help With:</h2>
 
-  <div class="service-grid">
+  <div class="services">
     <div class="service">⚡ Power Outages</div>
     <div class="service">🔥 Burning Smell</div>
-    <div class="service">🔌 Same-Day Outlet Install</div>
+    <div class="service">🔌 Circuit & Outlet Installations</div>
     <div class="service">⚡ Panel Repairs</div>
     <div class="service">💡 Flickering Lights</div>
     <div class="service">🛠 Emergency Repairs</div>
   </div>
 </section>
 
-<!-- TRUST -->
-<section class="trust">
-  <h2>Why Choose Surge Electric</h2>
+<!-- WHY -->
+<section class="why">
+  <div class="why-overlay"></div>
 
-  <div class="trust-grid">
-    <div>⚡ Fast Response (60–90 min)</div>
-    <div>🧠 Real Troubleshooting (Not Guesswork)</div>
-    <div>💰 Upfront Pricing Before Work</div>
-    <div>🛠 Licensed • Insured • Local</div>
+  <div class="why-content">
+    <h2>Why Choose Surge Electric</h2>
+
+    <ul>
+      <li>⚡ Fast Response Times</li>
+      <li>🧠 Expert Troubleshooting</li>
+      <li>💰 Upfront Pricing</li>
+      <li>🛠 Licensed & Insured</li>
+    </ul>
   </div>
 </section>
 
-<!-- TRUCK -->
-<section class="truck">
-  <img src="truck.png" alt="Surge Electric Truck">
-</section>
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  ⚡ Call Now: 775-287-6348
+</div>
 
-<!-- URGENCY -->
-<section class="urgency">
-  <h2>Electrical Problems Don’t Fix Themselves</h2>
-  <p>Delays can lead to bigger damage, higher costs, or safety risks.</p>
-
-  <a href="tel:7752876348" class="cta">⚡ Call Now: 775-287-6348</a>
-</section>
-
-<!-- ABOUT -->
-<section class="about">
-  <h2>Local Electrician You Can Trust</h2>
-  <p>
-    Based in Reno, Surge Electric specializes in fast troubleshooting, repairs,
-    and same-day electrical service. Whether it’s an emergency or you just need
-    something done today, we show up ready to solve it.
-  </p>
-</section>
-
-<!-- FAQ -->
-<section class="faq">
-  <h2>Common Questions</h2>
-
-  <div><b>How fast can you get here?</b><br>
-  Usually within 60–90 minutes depending on location</div>
-
-  <div><b>Do you only handle emergencies?</b><br>
-  No, we also offer same-day installations and upgrades</div>
-
-  <div><b>Can you come out today for non-emergency work?</b><br>
-  Yes — same-day service available when scheduling allows</div>
-
-  <div><b>Do you provide upfront pricing?</b><br>
-  Yes, always before work begins</div>
-
-  <div><b>Are you licensed & insured?</b><br>
-  Yes, fully licensed in Nevada</div>
-</section>
-
-<!-- FINAL CTA -->
+<!-- FINAL -->
 <section class="final">
-  <h2>Need An Electrician Right Now?</h2>
-  <p style="opacity:0.8;">Fast response. Real solutions. No waiting days.</p>
+  <h2>Electrical Problems Are Dangerous — Don’t Wait</h2>
 
-  <a href="tel:7752876348" class="cta">⚡ Call Now: 775-287-6348</a>
+  <div class="sub">
+    Burning smell? Hot panel? Breakers tripping?
+  </div>
+
+  <a href="tel:7752876348" class="cta">
+    ⚡ Call Now (775) 287-6348
+  </a>
 </section>
 
 <!-- FOOTER -->
 <div class="footer">
-Serving Reno • Sparks • Spanish Springs • Sun Valley
+  Serving Reno • Sparks • Spanish Springs • Sun Valley
 </div>
-
-<!-- STICKY CALL -->
-<a href="tel:7752876348" class="sticky-call">📞 Call Now</a>
 
 </body>
 </html>

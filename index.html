@@ -16,8 +16,8 @@ body {
 
 /* HERO */
 .hero {
-  background: url('YOUR-IMAGE.jpg') center/cover no-repeat;
-  padding:80px 20px;
+  background: url('panel.png') center/cover no-repeat;
+  padding:90px 20px;
   text-align:center;
   position:relative;
 }
@@ -40,7 +40,7 @@ h1 {
   margin-bottom:10px;
 }
 
-p {
+.hero p {
   opacity:0.9;
 }
 
@@ -104,7 +104,7 @@ p {
   gap:20px;
 }
 
-/* IMAGE */
+/* TRUCK */
 .truck {
   text-align:center;
 }
@@ -113,15 +113,16 @@ p {
   max-width:100%;
 }
 
-/* STRIP */
-.strip {
-  background:#111;
-  padding:40px 20px;
+/* URGENCY */
+.urgency {
+  background:#0a0a0a;
   text-align:center;
+  padding:50px 20px;
 }
 
-.strip div {
-  margin:10px 0;
+.urgency h2 {
+  font-size:28px;
+  margin-bottom:10px;
 }
 
 /* ABOUT */
@@ -149,10 +150,26 @@ p {
   text-align:center;
 }
 
+/* FOOTER */
 .footer {
   background:red;
   text-align:center;
   padding:10px;
+}
+
+/* STICKY CALL */
+.sticky-call {
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:red;
+  color:white;
+  text-align:center;
+  padding:15px;
+  font-weight:bold;
+  z-index:999;
+  text-decoration:none;
 }
 </style>
 </head>
@@ -175,7 +192,7 @@ p {
 
 <!-- BAR -->
 <div class="bar">
-  ✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
+✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
 </div>
 
 <!-- SERVICES -->
@@ -197,47 +214,71 @@ p {
   <h2>Why Choose Surge Electric</h2>
 
   <div class="trust-grid">
-    <div>⚡ Fast Emergency Response</div>
-    <div>🧠 Expert Troubleshooting</div>
-    <div>💰 Upfront Pricing</div>
-    <div>🛠 Licensed & Insured</div>
+    <div>⚡ Fast Response (60–90 min)</div>
+    <div>🧠 Real Troubleshooting (Not Guesswork)</div>
+    <div>💰 Upfront Pricing Before Work</div>
+    <div>🛠 Licensed • Insured • Local</div>
   </div>
 </section>
 
 <!-- TRUCK -->
 <section class="truck">
-  <img src="YOUR-TRUCK.jpg">
+  <img src="truck.png" alt="Surge Electric Truck">
 </section>
 
-<!-- STRIP -->
-<section class="strip">
+<!-- URGENCY -->
+<section class="urgency">
+  <h2>Electrical Problems Don’t Fix Themselves</h2>
+  <p>Delays can lead to bigger damage, higher costs, or safety risks.</p>
+
+  <a href="tel:7752876348" class="cta">⚡ Call Now: 775-287-6348</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
   <h2>Local Electrician You Can Trust</h2>
-  <div>Based in Reno, we specialize in fast troubleshooting, repairs, and same-day electrical service.</div>
+  <p>
+    Based in Reno, Surge Electric specializes in fast troubleshooting, repairs,
+    and same-day electrical service. Whether it’s an emergency or you just need
+    something done today, we show up ready to solve it.
+  </p>
 </section>
 
 <!-- FAQ -->
 <section class="faq">
   <h2>Common Questions</h2>
 
-  <div><b>How fast can you get here?</b><br>Usually within 60–90 minutes</div>
+  <div><b>How fast can you get here?</b><br>
+  Usually within 60–90 minutes depending on location</div>
 
-  <div><b>Do you only handle emergencies?</b><br>No, we also offer same-day installations and upgrades</div>
+  <div><b>Do you only handle emergencies?</b><br>
+  No, we also offer same-day installations and upgrades</div>
 
-  <div><b>Do you provide upfront pricing?</b><br>Yes, always before work begins</div>
+  <div><b>Can you come out today for non-emergency work?</b><br>
+  Yes — same-day service available when scheduling allows</div>
 
-  <div><b>Are you licensed & insured?</b><br>Yes, fully licensed in Nevada</div>
+  <div><b>Do you provide upfront pricing?</b><br>
+  Yes, always before work begins</div>
+
+  <div><b>Are you licensed & insured?</b><br>
+  Yes, fully licensed in Nevada</div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="final">
   <h2>Need An Electrician Right Now?</h2>
-  <a href="tel:7752876348" class="cta">⚡ Call Now</a>
+  <p style="opacity:0.8;">Fast response. Real solutions. No waiting days.</p>
+
+  <a href="tel:7752876348" class="cta">⚡ Call Now: 775-287-6348</a>
 </section>
 
 <!-- FOOTER -->
 <div class="footer">
 Serving Reno • Sparks • Spanish Springs • Sun Valley
 </div>
+
+<!-- STICKY CALL -->
+<a href="tel:7752876348" class="sticky-call">📞 Call Now</a>
 
 </body>
 </html>

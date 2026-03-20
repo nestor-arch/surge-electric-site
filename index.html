@@ -1,242 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Emergency Electrician Reno | Surge Electric</title>
 
 <style>
 * {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+body {background:#000;color:white;}
 
-body {background:#050505;color:white;}
-
-/* TOP BAR */
-.top-bar {
-  background:#ff1a1a;
-  text-align:center;
-  padding:10px;
-  font-weight:bold;
-  font-size:14px;
-  box-shadow:0 0 15px rgba(255,0,0,0.6);
+/* ===== HERO ===== */
+.hero {
+  background: url('YOUR-HERO-IMAGE.jpg') center/cover no-repeat;
+  min-height: 650px;
+  position: relative;
 }
 
-/* HERO */
-.hero {
+.overlay {
+  background: rgba(0,0,0,0.65);
+  width:100%;
+  height:100%;
   display:flex;
-  flex-wrap:wrap;
   align-items:center;
   justify-content:center;
-  padding:70px 20px;
-  background:radial-gradient(circle at center, #111 0%, #000 100%);
+  text-align:center;
+  padding:20px;
 }
 
-.hero img {
-  width:100%;
-  max-width:520px;
-  border-radius:12px;
-  box-shadow:0 0 60px rgba(255,0,0,0.35);
+.hero-content {
+  max-width:800px;
 }
 
-.hero-text {
-  max-width:520px;
-  padding:30px;
-}
-
-h1 {
-  font-size:42px;
+.hero h1 {
+  font-size:48px;
+  font-weight:800;
   margin-bottom:15px;
 }
 
-.hero-text p {
-  font-size:18px;
+.hero p {
+  font-size:20px;
+  margin-bottom:20px;
 }
 
-.fast {
-  color:#ff3b3b;
-  font-weight:bold;
-}
-
-/* EXTRA URGENCY LINE */
-.urgent {
-  color:#ff3b3b;
-  font-weight:bold;
-  font-size:18px;
-  margin-top:10px;
-}
-
-/* CTA */
-.cta {
-  background:linear-gradient(#ff3b3b,#990000);
-  padding:18px 30px;
-  display:inline-block;
-  margin-top:25px;
-  font-weight:bold;
-  border-radius:10px;
+.cta-main {
+  background: linear-gradient(to bottom,#ff3b3b,#b80000);
+  padding:18px 35px;
+  font-size:22px;
+  border-radius:12px;
   text-decoration:none;
   color:white;
+  display:inline-block;
+  box-shadow:0 0 25px rgba(255,0,0,0.6);
+  margin-bottom:15px;
+}
+
+.trust {
+  font-size:16px;
+  opacity:0.9;
+}
+
+/* ===== GOLD BAR ===== */
+.gold-bar {
+  background: linear-gradient(to right,#caa64b,#ffd700,#caa64b);
+  color:black;
+  text-align:center;
+  padding:12px;
+  font-weight:bold;
   font-size:20px;
-  box-shadow:0 0 35px rgba(255,0,0,0.8);
-  transition:0.2s;
 }
 
-.cta:hover {
-  transform:scale(1.05);
-}
-
-/* CHECK LINE */
-.checks {
-  margin-top:15px;
-  color:#ccc;
-}
-
-/* SECTION */
-.section {
-  padding:70px 20px;
+/* ===== SERVICES ===== */
+.services {
+  background: url('YOUR-BACKGROUND-TEXTURE.jpg') center/cover no-repeat;
+  padding:40px 20px;
   text-align:center;
 }
 
-/* RED DIVIDER */
-.divider {
-  height:2px;
-  background:linear-gradient(to right, transparent, red, transparent);
-  margin:50px 0;
-  box-shadow:0 0 10px red;
-}
-
-/* SERVICES */
-.features {
+.services-grid {
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:20px;
-  margin-top:30px;
+  gap:25px;
+  margin-top:25px;
 }
 
-.feature {
-  width:170px;
-  padding:18px;
-  background:#121212;
+.service {
+  background: rgba(0,0,0,0.6);
+  padding:15px 20px;
   border-radius:10px;
-  border:1px solid rgba(255,0,0,0.25);
-  box-shadow:0 0 15px rgba(255,0,0,0.15);
-  transition:0.2s;
+  border:1px solid rgba(255,0,0,0.4);
 }
 
-.feature:hover {
-  transform:translateY(-5px);
-  box-shadow:0 0 25px rgba(255,0,0,0.4);
-}
-
-/* TRUCK SECTION */
+/* ===== WHY + TRUCK ===== */
 .truck-section {
-  background:#080808;
+  background: url('YOUR-TRUCK-IMAGE.jpg') center/cover no-repeat;
+  min-height:500px;
+  position:relative;
 }
 
-.truck-section img {
-  width:100%;
-  max-width:750px;
-  margin-top:30px;
-  border-radius:12px;
-  box-shadow:0 0 80px rgba(255,0,0,0.35);
+.truck-content {
+  text-align:left;
+  max-width:600px;
 }
 
-/* WARNING TEXT */
-.warning {
-  color:#ff3b3b;
-  margin-top:15px;
+.checklist {
+  font-size:20px;
+  line-height:2;
+}
+
+/* ===== RED CTA BAR ===== */
+.red-bar {
+  background: linear-gradient(to right,#ff1a1a,#990000);
+  text-align:center;
+  padding:18px;
+  font-size:22px;
   font-weight:bold;
-  font-size:18px;
 }
 
-/* STICKY BAR */
-.sticky-call {
-  position:fixed;
-  bottom:0;
-  width:100%;
+/* ===== FINAL ===== */
+.final {
+  background: url('YOUR-BACKGROUND-TEXTURE.jpg') center/cover no-repeat;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.final h2 {
+  margin-bottom:15px;
+}
+
+.bottom-bar {
   background:#ff1a1a;
   text-align:center;
   padding:15px;
-  font-size:18px;
   font-weight:bold;
-  box-shadow:0 -5px 20px rgba(255,0,0,0.6);
 }
 </style>
 </head>
 
 <body>
 
-<div class="top-bar">
-⚡ 24/7 Emergency Electrician • Reno NV • Call Now (775) 287-6348
-</div>
-
 <!-- HERO -->
-<div class="hero">
+<section class="hero">
+  <div class="overlay">
+    <div class="hero-content">
 
-<img src="panel.png" alt="Electrician Working" />
+      <h1>Emergency Electrician in Reno — Available Now</h1>
 
-<div class="hero-text">
-<h1>Emergency Electrician in Reno — Available Now</h1>
+      <p>Power Out? Burning Smell? Breakers Tripping?<br>
+      <b>We respond FAST.</b></p>
 
-<p>Power Out? Burning Smell? Breakers Tripping?</p>
-<p class="fast">We respond FAST.</p>
+      <a href="tel:17752876348" class="cta-main">
+        ⚡ Call Now: 775-287-6348
+      </a>
 
-<p class="urgent">🚚 Same-Day Service • Fast Arrival</p>
+      <div class="trust">
+        ✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
+      </div>
 
-<a href="tel:17752876348" class="cta">⚡ CALL NOW – IMMEDIATE SERVICE</a>
+    </div>
+  </div>
+</section>
 
-<p class="checks">
-✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
-</p>
+<!-- GOLD BAR -->
+<div class="gold-bar">
+  ✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
 </div>
-
-</div>
-
-<div class="divider"></div>
 
 <!-- SERVICES -->
-<div class="section">
-<h2>We Can Help With:</h2>
+<section class="services">
+  <h2>We Can Help With:</h2>
 
-<div class="features">
-<div class="feature">⚡ Power Outages</div>
-<div class="feature">🔌 Breaker Issues</div>
-<div class="feature">🔥 Burning Smell</div>
-<div class="feature">⚠️ Dead Outlets</div>
-<div class="feature">💡 Flickering Lights</div>
-<div class="feature">🧰 Emergency Repairs</div>
-</div>
-</div>
+  <div class="services-grid">
+    <div class="service">⚡ Power Outages</div>
+    <div class="service">🔌 Breaker Issues</div>
+    <div class="service">🔥 Burning Smell</div>
+    <div class="service">⚠ Dead Outlets</div>
+    <div class="service">💡 Flickering Lights</div>
+    <div class="service">🧰 Emergency Repairs</div>
+  </div>
+</section>
 
-<div class="divider"></div>
+<!-- TRUCK / WHY -->
+<section class="truck-section">
+  <div class="overlay">
+    <div class="truck-content">
 
-<!-- TRUST + TRUCK -->
-<div class="section truck-section">
+      <h2>Why Choose Surge Electric</h2>
 
-<h2>Why Choose Surge Electric</h2>
+      <div class="checklist">
+        ✔ Licensed & Insured<br>
+        ✔ NV Licensed Electrician<br>
+        ✔ Same-Day Service<br>
+        ✔ Local Reno Electrician
+      </div>
 
-<p>✔ Licensed & Insured</p>
-<p>✔ NV Licensed Electrician</p>
-<p>✔ Same-Day Service</p>
-<p>✔ Local Reno Electrician</p>
+    </div>
+  </div>
+</section>
 
-<img src="truck.png" alt="Service Truck" />
-
-<a href="tel:17752876348" class="cta">⚡ CALL NOW – IMMEDIATE SERVICE</a>
-
-<h2 style="margin-top:40px;">Electrical Problems Are Dangerous</h2>
-
-<p style="margin-top:10px;">
-Serving Reno • Sparks • Spanish Springs • Sun Valley
-</p>
-
-<p class="warning">
-Burning smell? Hot panel? Don’t wait.
-</p>
-
+<!-- RED CTA -->
+<div class="red-bar">
+  ⚡ Call Now: 775-287-6348
 </div>
 
-<div class="sticky-call">
-📞 Call Now (775) 287-6348
+<!-- FINAL -->
+<section class="final">
+  <h2>Electrical Problems Are Dangerous — Don’t Wait</h2>
+
+  <p>Burning smell? Hot panel? Breakers tripping?</p>
+
+  <a href="tel:17752876348" class="cta-main">
+    ⚡ Call Now (775) 287-6348
+  </a>
+</section>
+
+<div class="bottom-bar">
+  Serving Reno • Sparks • Spanish Springs • Sun Valley
 </div>
 
 </body>

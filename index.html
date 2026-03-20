@@ -3,151 +3,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emergency Electrician Reno | Surge Electric</title>
+
+<title>Emergency & Same-Day Electrician Reno | Surge Electric</title>
 
 <style>
-* {margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-body {background:#000;color:white;}
-
-/* 🔥 HERO (FIXED HEIGHT) */
-.hero {
-  background-image: url('panel.png');
-  background-size: cover;
-  background-position: right center;
-  background-repeat: no-repeat;
-  height: 480px; /* 🔥 THIS IS THE FIX */
-  position: relative;
-}
-
-/* OVERLAY */
-.overlay {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.65));
-  width:100%;
-  height:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:20px;
-}
-
-/* CONTENT */
-.hero-content {
-  max-width:750px;
-}
-
-.hero h1 {
-  font-size:40px;
-  font-weight:800;
-  margin-bottom:10px;
-}
-
-.hero p {
-  font-size:18px;
-  margin-bottom:15px;
-}
-
-.cta-main {
-  background: linear-gradient(to bottom,#ff3b3b,#b80000);
-  padding:16px 30px;
-  font-size:20px;
-  border-radius:10px;
-  text-decoration:none;
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#000;
   color:white;
-  display:inline-block;
-  box-shadow:0 0 25px rgba(255,0,0,0.6);
+}
+
+/* HERO */
+.hero {
+  background: url('YOUR-IMAGE.jpg') center/cover no-repeat;
+  padding:80px 20px;
+  text-align:center;
+  position:relative;
+}
+
+.hero::before {
+  content:'';
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.75);
+}
+
+.hero-content {
+  position:relative;
+  z-index:2;
+}
+
+h1 {
+  font-size:42px;
   margin-bottom:10px;
 }
 
-.trust {
-  font-size:14px;
+p {
   opacity:0.9;
 }
 
-/* GOLD BAR */
-.gold-bar {
-  background: linear-gradient(to right,#caa64b,#ffd700,#caa64b);
-  color:black;
+/* BUTTON */
+.cta {
+  display:inline-block;
+  background:linear-gradient(#ff3b3b,#cc0000);
+  padding:16px 28px;
+  margin-top:20px;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+  color:white;
+  font-size:20px;
+}
+
+.subtext {
+  margin-top:10px;
+  font-size:14px;
+  opacity:0.85;
+}
+
+/* BAR */
+.bar {
+  background:#d4af37;
   text-align:center;
   padding:10px;
   font-weight:bold;
-  font-size:16px;
+  color:black;
 }
 
 /* SERVICES */
 .services {
-  background:#000;
   padding:40px 20px;
   text-align:center;
 }
 
-.services-grid {
+.service-grid {
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
-  gap:12px;
-  margin-top:15px;
+  gap:10px;
 }
 
 .service {
-  background: rgba(0,0,0,0.6);
-  padding:10px 16px;
-  border-radius:10px;
-  border:1px solid rgba(255,0,0,0.4);
-  font-size:14px;
+  border:1px solid red;
+  padding:10px 14px;
+  border-radius:20px;
 }
 
-/* TRUCK SECTION */
-.truck-section {
-  background-image: url('truck.png');
-  background-size: cover;
-  background-position: center;
-  min-height:400px;
-  position:relative;
-}
-
-.truck-content {
-  text-align:left;
-  max-width:600px;
-}
-
-.checklist {
-  font-size:18px;
-  line-height:1.8;
-}
-
-/* RED CTA */
-.red-bar {
-  background: linear-gradient(to right,#ff1a1a,#990000);
-  text-align:center;
-  padding:16px;
-  font-size:20px;
-  font-weight:bold;
-}
-
-/* FINAL */
-.final {
-  background:#000;
-  text-align:center;
+/* TRUST */
+.trust {
   padding:40px 20px;
-}
-
-.bottom-bar {
-  background:#ff1a1a;
   text-align:center;
-  padding:14px;
-  font-weight:bold;
 }
 
-/* MOBILE */
-@media(max-width:768px){
-  .hero {
-    height: 420px;
-    background-position: center;
-  }
+.trust-grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
 
-  .hero h1 {font-size:26px;}
-  .cta-main {font-size:16px;padding:12px 20px;}
+/* IMAGE */
+.truck {
+  text-align:center;
+}
+
+.truck img {
+  max-width:100%;
+}
+
+/* STRIP */
+.strip {
+  background:#111;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.strip div {
+  margin:10px 0;
+}
+
+/* ABOUT */
+.about {
+  padding:40px 20px;
+  text-align:center;
+  max-width:800px;
+  margin:auto;
+}
+
+/* FAQ */
+.faq {
+  padding:40px 20px;
+  max-width:800px;
+  margin:auto;
+}
+
+.faq div {
+  margin:15px 0;
+}
+
+/* FINAL CTA */
+.final {
+  padding:60px 20px;
+  text-align:center;
+}
+
+.footer {
+  background:red;
+  text-align:center;
+  padding:10px;
 }
 </style>
 </head>
@@ -156,28 +161,20 @@ body {background:#000;color:white;}
 
 <!-- HERO -->
 <section class="hero">
-  <div class="overlay">
-    <div class="hero-content">
+  <div class="hero-content">
+    <h1>Emergency & Same-Day Electrician in Reno</h1>
+    <p>Power Out? Burning Smell? Need an Outlet Installed Today?</p>
 
-      <h1>Emergency Electrician in Reno — Available Now</h1>
+    <a href="tel:7752876348" class="cta">⚡ Call Now: 775-287-6348</a>
 
-      <p>Power Out? Burning Smell? Breakers Tripping?<br>
-      <b>We respond FAST.</b></p>
-
-      <a href="tel:17752876348" class="cta-main">
-        ⚡ Call Now: 775-287-6348
-      </a>
-
-      <div class="trust">
-        ✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
-      </div>
-
+    <div class="subtext">
+      ⚡ Emergency Repairs • Same-Day Service • Installations Available
     </div>
   </div>
 </section>
 
-<!-- GOLD BAR -->
-<div class="gold-bar">
+<!-- BAR -->
+<div class="bar">
   ✔ Same-Day Service • ✔ Licensed Electrician • ✔ Local Reno
 </div>
 
@@ -185,54 +182,61 @@ body {background:#000;color:white;}
 <section class="services">
   <h2>We Can Help With:</h2>
 
-  <div class="services-grid">
+  <div class="service-grid">
     <div class="service">⚡ Power Outages</div>
-    <div class="service">🔌 Breaker Issues</div>
     <div class="service">🔥 Burning Smell</div>
-    <div class="service">⚠ Dead Outlets</div>
+    <div class="service">🔌 Same-Day Outlet Install</div>
+    <div class="service">⚡ Panel Repairs</div>
     <div class="service">💡 Flickering Lights</div>
-    <div class="service">🧰 Emergency Repairs</div>
+    <div class="service">🛠 Emergency Repairs</div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <h2>Why Choose Surge Electric</h2>
+
+  <div class="trust-grid">
+    <div>⚡ Fast Emergency Response</div>
+    <div>🧠 Expert Troubleshooting</div>
+    <div>💰 Upfront Pricing</div>
+    <div>🛠 Licensed & Insured</div>
   </div>
 </section>
 
 <!-- TRUCK -->
-<section class="truck-section">
-  <div class="overlay">
-    <div class="truck-content">
-
-      <h2>Why Choose Surge Electric</h2>
-
-      <div class="checklist">
-        ✔ Licensed & Insured<br>
-        ✔ NV Licensed Electrician<br>
-        ✔ Same-Day Service<br>
-        ✔ Local Reno Electrician
-      </div>
-
-    </div>
-  </div>
+<section class="truck">
+  <img src="YOUR-TRUCK.jpg">
 </section>
 
-<!-- RED BAR -->
-<div class="red-bar">
-  ⚡ Call Now: 775-287-6348
-</div>
+<!-- STRIP -->
+<section class="strip">
+  <h2>Local Electrician You Can Trust</h2>
+  <div>Based in Reno, we specialize in fast troubleshooting, repairs, and same-day electrical service.</div>
+</section>
 
-<!-- FINAL -->
+<!-- FAQ -->
+<section class="faq">
+  <h2>Common Questions</h2>
+
+  <div><b>How fast can you get here?</b><br>Usually within 60–90 minutes</div>
+
+  <div><b>Do you only handle emergencies?</b><br>No, we also offer same-day installations and upgrades</div>
+
+  <div><b>Do you provide upfront pricing?</b><br>Yes, always before work begins</div>
+
+  <div><b>Are you licensed & insured?</b><br>Yes, fully licensed in Nevada</div>
+</section>
+
+<!-- FINAL CTA -->
 <section class="final">
-  <h2>Electrical Problems Are Dangerous — Don’t Wait</h2>
-
-  <p>Burning smell? Hot panel? Breakers tripping?</p>
-
-  <br>
-
-  <a href="tel:17752876348" class="cta-main">
-    ⚡ Call Now (775) 287-6348
-  </a>
+  <h2>Need An Electrician Right Now?</h2>
+  <a href="tel:7752876348" class="cta">⚡ Call Now</a>
 </section>
 
-<div class="bottom-bar">
-  Serving Reno • Sparks • Spanish Springs • Sun Valley
+<!-- FOOTER -->
+<div class="footer">
+Serving Reno • Sparks • Spanish Springs • Sun Valley
 </div>
 
 </body>
